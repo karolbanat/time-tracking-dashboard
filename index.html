@@ -28,9 +28,11 @@
             <h2 class="dashboard__heading"><span>Report for</span><br> Jeremy Robson</h2>
           </div>
           <ul class="dashboard__controls">
-            <li><button data-role="control" data-time-span="day" class="dashboard__control-button">Daily</button></li>
-            <li><button data-role="control" data-time-span="week" class="dashboard__control-button">Weekly</button></li>
-            <li><button data-role="control" data-time-span="month" class="dashboard__control-button">Monthly</button>
+            <li><button data-role="control" data-timeframe="daily"
+                      class="dashboard__control-button active">Daily</button></li>
+            <li><button data-role="control" data-timeframe="weekly" class="dashboard__control-button">Weekly</button>
+            </li>
+            <li><button data-role="control" data-timeframe="monthly" class="dashboard__control-button">Monthly</button>
             </li>
           </ul>
         </header>
@@ -50,7 +52,7 @@
                       class="visually-hidden">hours</span>
               </p>
               <p class="tracking-card__last-time">
-                Last <span data-time-span="week">Week</span> - <span data-time="previous">36</span><span
+                Last <span data-time-span="">Week</span> - <span data-time="previous">36</span><span
                       aria-hidden="true">hrs</span><span class="visually-hidden">hours</span>
               </p>
             </div>
@@ -72,7 +74,7 @@
                       class="visually-hidden">hours</span>
               </p>
               <p class="tracking-card__last-time">
-                Last <span data-time-span="week">Week</span> - <span data-time="previous">8</span><abbr
+                Last <span data-time-span="">Week</span> - <span data-time="previous">8</span><abbr
                       aria-hidden="true">hrs</abbr><span class="visually-hidden">hours</span>
               </p>
             </div>
@@ -94,7 +96,7 @@
                       class="visually-hidden">hours</span>
               </p>
               <p class="tracking-card__last-time">
-                Last <span data-time-span="week">Week</span> - <span data-time="previous">7</span><abbr
+                Last <span data-time-span="">Week</span> - <span data-time="previous">7</span><abbr
                       aria-hidden="true">hrs</abbr><span class="visually-hidden">hours</span>
               </p>
             </div>
@@ -116,7 +118,7 @@
                       class="visually-hidden">hours</span>
               </p>
               <p class="tracking-card__last-time">
-                Last <span data-time-span="week">Week</span> - <span data-time="previous">5</span><abbr
+                Last <span data-time-span="">Week</span> - <span data-time="previous">5</span><abbr
                       aria-hidden="true">hrs</abbr><span class="visually-hidden">hours</span>
               </p>
             </div>
@@ -138,7 +140,7 @@
                       class="visually-hidden">hours</span>
               </p>
               <p class="tracking-card__last-time">
-                Last <span data-time-span="week">Week</span> - <span data-time="previous">10</span><abbr
+                Last <span data-time-span="">Week</span> - <span data-time="previous">10</span><abbr
                       aria-hidden="true">hrs</abbr><span class="visually-hidden">hours</span>
               </p>
             </div>
@@ -160,7 +162,7 @@
                       class="visually-hidden">hours</span>
               </p>
               <p class="tracking-card__last-time">
-                Last <span data-time-span="week">Week</span> - <span data-time="previous">2</span><abbr
+                Last <span data-time-span="">Week</span> - <span data-time="previous">2</span><abbr
                       aria-hidden="true">hrs</abbr><span class="visually-hidden">hours</span>
               </p>
             </div>
@@ -170,7 +172,7 @@
     </div>
   </main>
 
-  <script src="./dist/js/main.min.js"></script>
+  <script src="./dist/js/main.min.js" defer></script>
 </body>
 
 </html>
