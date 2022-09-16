@@ -1,7 +1,4 @@
-@use './base/root';
-@use './base/reset';
-@use './base/base';
-
-@use './layout/flow';
-
-@use './utility/visually-hidden';
+@use './base';
+@use './layout';
+@use './components';
+@use './utility';

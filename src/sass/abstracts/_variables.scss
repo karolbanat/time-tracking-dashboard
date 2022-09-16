@@ -4,18 +4,46 @@ $breakpoints: (
 	large: 62em,
 );
 
-$colors: ();
-
-$font-sizes: (
-	small: (),
-	medium: (),
+$colors: (
+	primary: (
+		400: hsl(246 80% 60%),
+	),
+	category: (
+		work: hsl(15 100% 70%),
+		play: hsl(195 74% 62%),
+		study: hsl(348 100% 68%),
+		exercise: hsl(145 58% 55%),
+		social: hsl(264 64% 52%),
+		selfcare: hsl(43 84% 65%),
+	),
+	neutral: (
+		100: hsl(0 0% 100%),
+		400: hsl(236 100% 87%),
+		500: hsl(235 45% 61%),
+		600: hsl(235 46% 20%),
+		700: hsl(226 43% 10%),
+	),
 );
 
-$font-weights: ();
+$font-sizes: (
+	small: (
+		300: 1.5rem,
+		400: 1.8rem,
+		600: 2.4rem,
+		700: 3.2rem,
+	),
+	medium: (
+		600: 4rem,
+		700: 5.6rem,
+	),
+);
 
-$border-radius: ();
+$font-weights: (
+	300: 300,
+	400: 400,
+	500: 500,
+);
 
-$spacings: (
-	em: (),
-	rem: (),
+$border-radius: (
+	400: 1.5rem,
 );

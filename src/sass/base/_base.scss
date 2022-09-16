@@ -1,0 +1,14 @@
+body {
+	font-size: var(--fz-400);
+	font-weight: var(--fw-400);
+	font-family: var(--ff-primary);
+	color: var(--clr-neutral-100);
+	background-color: var(--clr-neutral-700);
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
