@@ -2,20 +2,26 @@
 
 .tracking-card {
 	padding-top: clamp(3.8rem, 5vw, 4.5rem);
-	background-color: var(--background-clr, var(--clr-neutral-600));
+	background-color: var(--background-clr, var(--clr-neutral-700));
 	background-image: var(--bg-image, none);
 	background-repeat: no-repeat;
 	background-position: top 0 right 1.6rem;
 	border-radius: var(--borr-400);
 	overflow: hidden;
 
+	&:hover &__content {
+		background-color: var(--clr-neutral-600);
+		cursor: pointer;
+	}
+
 	&__content {
 		--padding-inline: 2.4rem;
 		--padding-block: 2.8rem;
 		padding-block: var(--padding-block);
 		padding-inline: var(--padding-inline);
-		background-color: var(--clr-neutral-600);
+		background-color: var(--clr-neutral-700);
 		border-radius: var(--borr-400);
+		transition: background-color 0.35s ease;
 		@include mxn.mq(medium) {
 			--padding-inline: 3rem;
 		}
