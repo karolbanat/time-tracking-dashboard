@@ -8,6 +8,7 @@
 	background-position: top 0 right 1.6rem;
 	border-radius: var(--borr-400);
 	overflow: hidden;
+	animation: scale-up 1s ease;
 
 	&:hover &__content {
 		background-color: var(--clr-neutral-600);

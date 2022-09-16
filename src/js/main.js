@@ -49,7 +49,7 @@ const insertDummyData = () => {
 		const timeSpan = card.querySelector('[data-time-span]');
 		currentTime.innerText = 0;
 		previousTime.innerText = 0;
-		timeSpan.innerText = 'Week';
+		timeSpan.innerText = '...';
 	});
 };
 
