@@ -47,6 +47,11 @@
 		background: none;
 		border: none;
 		cursor: pointer;
+
+		&:hover,
+		&:focus {
+			filter: brightness(0) invert(1);
+		}
 	}
 
 	/* modifier for different categories */
