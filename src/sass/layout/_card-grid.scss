@@ -1,0 +1,24 @@
+@use '../abstracts/mixins' as mxn;
+
+.card-grid {
+	--gap: 0.8rem;
+	display: grid;
+	gap: var(--gap);
+	@include mxn.mq(medium) {
+		--gap: 2.4rem;
+	}
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		&--sm {
+			@include mxn.mq(medium) {
+				flex-direction: column;
+				align-items: flex-start;
+				gap: 0.8rem;
+			}
+		}
+	}
+}

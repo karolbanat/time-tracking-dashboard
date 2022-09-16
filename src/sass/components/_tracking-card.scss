@@ -1,0 +1,76 @@
+@use '../abstracts/mixins' as mxn;
+
+.tracking-card {
+	padding-top: 3.8rem;
+	background-color: var(--background-clr, var(--clr-neutral-600));
+	background-image: var(--bg-image, none);
+	background-repeat: no-repeat;
+	background-position: top 0 right 1.6rem;
+	border-radius: var(--borr-400);
+	overflow: hidden;
+
+	&__content {
+		--padding-inline: 2.4rem;
+		--padding-block: 2.8rem;
+		padding-block: var(--padding-block);
+		padding-inline: var(--padding-inline);
+		background-color: var(--clr-neutral-600);
+		border-radius: var(--borr-400);
+		@include mxn.mq(medium) {
+			--padding-inline: 3rem;
+		}
+	}
+
+	&__heading {
+		font-size: var(--fz-400);
+		font-weight: var(--fw-500);
+	}
+
+	&__current-time {
+		font-size: var(--fz-700);
+		font-weight: var(--fw-300);
+		color: var(--clr-neutral-100);
+	}
+
+	&__last-time {
+		font-size: var(--fz-300);
+		color: var(--clr-neutral-400);
+	}
+
+	&__options-button {
+		background: none;
+		border: none;
+		cursor: pointer;
+	}
+
+	/* modifier for different categories */
+	&--work {
+		--bg-image: url('../images/icon-work.svg');
+		--background-clr: var(--clr-category-work);
+	}
+
+	&--play {
+		--bg-image: url('../images/icon-play.svg');
+		--background-clr: var(--clr-category-play);
+	}
+
+	&--study {
+		--bg-image: url('../images/icon-study.svg');
+		--background-clr: var(--clr-category-study);
+	}
+
+	&--exercise {
+		--bg-image: url('../images/icon-exercise.svg');
+		--background-clr: var(--clr-category-exercise);
+	}
+
+	&--social {
+		--bg-image: url('../images/icon-social.svg');
+		--background-clr: var(--clr-category-social);
+	}
+
+	&--self-care {
+		--bg-image: url('../images/icon-self-care.svg');
+		--background-clr: var(--clr-category-selfcare);
+	}
+}
