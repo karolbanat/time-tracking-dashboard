@@ -1,7 +1,7 @@
 @use '../abstracts/mixins' as mxn;
 
 .tracking-card {
-	padding-top: 3.8rem;
+	padding-top: clamp(3.8rem, 5vw, 4.5rem);
 	background-color: var(--background-clr, var(--clr-neutral-600));
 	background-image: var(--bg-image, none);
 	background-repeat: no-repeat;
