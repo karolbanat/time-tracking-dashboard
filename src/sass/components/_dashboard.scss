@@ -1,0 +1,75 @@
+@use '../abstracts/mixins' as mxn;
+
+.dashboard {
+	&__header {
+		background-color: var(--clr-neutral-600);
+		border-radius: var(--borr-400);
+		overflow: hidden;
+	}
+
+	&__intro {
+		display: flex;
+		align-items: center;
+		gap: 1.6rem;
+		padding: 3.2rem;
+		background-color: var(--clr-primary-400);
+		border-radius: var(--borr-400);
+		@include mxn.mq(medium) {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+	}
+
+	&__controls {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 2rem;
+		padding: 2.4rem;
+		@include mxn.mq(small) {
+			justify-content: center;
+		}
+		@include mxn.mq(large) {
+			flex-direction: column;
+			align-items: flex-start;
+			padding-inline: 3.2rem;
+		}
+	}
+
+	&__control-button {
+		--text-clr: var(--clr-neutral-500);
+		color: var(--text-clr);
+		background: none;
+		border: none;
+		cursor: pointer;
+		transition: color 0.35s ease;
+
+		&.active,
+		&:is(:hover, :focus) {
+			--text-clr: var(--clr-neutral-100);
+		}
+	}
+
+	&__heading {
+		font-size: var(--fz-600);
+		font-weight: var(--fw-300);
+		color: var(--clr-neutral-100);
+
+		& span {
+			font-size: var(--fz-300);
+			font-weight: var(--fw-400);
+			color: var(--clr-neutral-400);
+		}
+	}
+
+	&__avatar {
+		--width: 6.4rem;
+		width: var(--width);
+		aspect-ratio: 1;
+		border: 3px solid var(--clr-neutral-100);
+		border-radius: 50%;
+		@include mxn.mq(medium) {
+			--width: 7.8rem;
+		}
+	}
+}
