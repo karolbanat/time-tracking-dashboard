@@ -13,53 +13,164 @@
   <link rel="stylesheet" href="./dist/css/main.min.css">
 
   <title>Frontend Mentor | Time tracking dashboard</title>
+  <meta name="description" content="Track the time of your activities with this simple tracing dashboard.">
 </head>
 
 <body>
 
-  Report for
-  Jeremy Robson
-
-  Daily
-  Weekly
-  Monthly
-
-  Work
-  32hrs
-  <!-- weekly -->
-  Previous - 36hrs
-  <!-- weekly -->
-
-  Play
-  10hrs
-  <!-- weekly -->
-  Previous - 8hrs
-  <!-- weekly -->
-
-  Study
-  4hrs
-  <!-- weekly -->
-  Previous - 7hrs
-  <!-- weekly -->
-
-  Exercise
-  4hrs
-  <!-- weekly -->
-  Previous - 5hrs
-  <!-- weekly -->
-
-  Social
-  1hr
-  <!-- weekly -->
-  Previous - 10hrs
-  <!-- weekly -->
-
-  Self Care
-  2hrs
-  <!-- weekly -->
-  Previous - 2hrs
-  <!-- weekly -->
-
+  <main>
+    <h1 class="visually-hidden">Time tracking dashboard</h1>
+    <div class="container">
+      <section class="dashboard">
+        <header class="dashboard__header">
+          <div class="dashboard__intro">
+            <img src="./dist/images/image-jeremy.png" alt="Image of Jeremy Robson" class="dashboard__avatar">
+            <h2 class="dashboard__heading"><span>Report for</span> Jeremy Robson</h2>
+          </div>
+          <ul class="dashboard__controls">
+            <li><button data-role="control" data-time-span="day" class="dashboard__control-button">Daily</button></li>
+            <li><button data-role="control" data-time-span="week" class="dashboard__control-button">Weekly</button></li>
+            <li><button data-role="control" data-time-span="month" class="dashboard__control-button">Monthly</button>
+            </li>
+          </ul>
+        </header>
+        <!-- work card -->
+        <ul class="dashboard__cards">
+          <li class="tracking-card tracking-card--work" data-category="work">
+            <article class="tracking-card__content | card-grid">
+              <header class="card-grid__row">
+                <h3 class="tracking-card__heading">Work</h3>
+                <button aria-label="Show options" class="options-button">
+                  <img src="./dist/images/icon-ellipsis.svg"
+                       alt="">
+                </button>
+              </header>
+              <div class="card-grid__row card-grid__row--sm">
+                <p class="tracking-card__current-time">
+                  <span data-time="current">32</span><abbr aria-hidden="true">hrs</abbr><span
+                        class="visually-hidden">hours</span>
+                </p>
+                <p class="tracing-card__last-time">
+                  Last <span data-time-span="week">Week</span> - <span data-time="previous">36</span><span
+                        aria-hidden="true">hrs</span><span class="visually-hidden">hours</span>
+                </p>
+              </div>
+            </article>
+          </li>
+          <!-- play card -->
+          <li class="tracking-card tracking-card--play" data-category="play">
+            <article class="tracking-card__content | card-grid">
+              <header class="card-grid__row">
+                <h3 class="tracking-card__heading">Play</h3>
+                <button aria-label="Show options" class="options-button">
+                  <img src="./dist/images/icon-ellipsis.svg"
+                       alt="">
+                </button>
+              </header>
+              <div class="card-grid__row card-grid__row--sm">
+                <p class="tracking-card__current-time">
+                  <span data-time="current">10</span><abbr aria-hidden="true">hrs</abbr><span
+                        class="visually-hidden">hours</span>
+                </p>
+                <p class="tracing-card__last-time">
+                  Last <span data-time-span="week">Week</span> - <span data-time="previous">8</span><abbr
+                        aria-hidden="true">hrs</abbr><span class="visually-hidden">hours</span>
+                </p>
+              </div>
+            </article>
+          </li>
+          <!-- study card -->
+          <li class="tracking-card tracking-card--study" data-category="study">
+            <article class="tracking-card__content | card-grid">
+              <header class="card-grid__row">
+                <h3 class="tracking-card__heading">Study</h3>
+                <button aria-label="Show options" class="options-button">
+                  <img src="./dist/images/icon-ellipsis.svg"
+                       alt="">
+                </button>
+              </header>
+              <div class="card-grid__row card-grid__row--sm">
+                <p class="tracking-card__current-time">
+                  <span data-time="current">4</span><abbr aria-hidden="true">hrs</abbr><span
+                        class="visually-hidden">hours</span>
+                </p>
+                <p class="tracing-card__last-time">
+                  Last <span data-time-span="week">Week</span> - <span data-time="previous">7</span><abbr
+                        aria-hidden="true">hrs</abbr><span class="visually-hidden">hours</span>
+                </p>
+              </div>
+            </article>
+          </li>
+          <!-- exercise card -->
+          <li class="tracking-card tracking-card--exercise" data-category="exercise">
+            <article class="tracking-card__content | card-grid">
+              <header class="card-grid__row">
+                <h3 class="tracking-card__heading">Exercise</h3>
+                <button aria-label="Show options" class="options-button">
+                  <img src="./dist/images/icon-ellipsis.svg"
+                       alt="">
+                </button>
+              </header>
+              <div class="card-grid__row card-grid__row--sm">
+                <p class="tracking-card__current-time">
+                  <span data-time="current">4</span><abbr aria-hidden="true">hrs</abbr><span
+                        class="visually-hidden">hours</span>
+                </p>
+                <p class="tracing-card__last-time">
+                  Last <span data-time-span="week">Week</span> - <span data-time="previous">5</span><abbr
+                        aria-hidden="true">hrs</abbr><span class="visually-hidden">hours</span>
+                </p>
+              </div>
+            </article>
+          </li>
+          <!-- social card -->
+          <li class="tracking-card tracking-card--social" data-category="social">
+            <article class="tracking-card__content | card-grid">
+              <header class="card-grid__row">
+                <h3 class="tracking-card__heading">Social</h3>
+                <button aria-label="Show options" class="options-button">
+                  <img src="./dist/images/icon-ellipsis.svg"
+                       alt="">
+                </button>
+              </header>
+              <div class="card-grid__row card-grid__row--sm">
+                <p class="tracking-card__current-time">
+                  <span data-time="current">5</span><abbr aria-hidden="true">hrs</abbr><span
+                        class="visually-hidden">hours</span>
+                </p>
+                <p class="tracing-card__last-time">
+                  Last <span data-time-span="week">Week</span> - <span data-time="previous">10</span><abbr
+                        aria-hidden="true">hrs</abbr><span class="visually-hidden">hours</span>
+                </p>
+              </div>
+            </article>
+          </li>
+          <!-- self-care card -->
+          <li class="tracking-card tracking-card--self-care" data-category="self care">
+            <article class="tracking-card__content | card-grid">
+              <header class="card-grid__row">
+                <h3 class="tracking-card__heading">Self Care</h3>
+                <button aria-label="Show options" class="options-button">
+                  <img src="./dist/images/icon-ellipsis.svg"
+                       alt="">
+                </button>
+              </header>
+              <div class="card-grid__row card-grid__row--sm">
+                <p class="tracking-card__current-time">
+                  <span data-time="current">2</span><abbr aria-hidden="true">hrs</abbr><span
+                        class="visually-hidden">hours</span>
+                </p>
+                <p class="tracing-card__last-time">
+                  Last <span data-time-span="week">Week</span> - <span data-time="previous">2</span><abbr
+                        aria-hidden="true">hrs</abbr><span class="visually-hidden">hours</span>
+                </p>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </main>
 
   <script src="./dist/js/main.min.js"></script>
 </body>
